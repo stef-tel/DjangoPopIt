@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>DjangoWebProject1</Name>
+    <RootNamespace>DjangoWebProject1</RootNamespace>
+    <InterpreterId>{d2aa69b9-1e14-4b6d-bb76-86e679fc656a}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
+    <WebBrowserPort>55206</WebBrowserPort>
+    <WebBrowserUrl>http://localhost:55206/site/index</WebBrowserUrl>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>e2c95ba2-3333-4b1e-8244-7746816db22e</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>DjangoWebProject1.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="manage.py" />
+    <Compile Include="DjangoWebProject1\__init__.py" />
+    <Compile Include="DjangoWebProject1\settings.py" />
+    <Compile Include="DjangoWebProject1\urls.py" />
+    <Compile Include="DjangoWebProject1\wsgi.py" />
+    <Compile Include="PopItSite\admin.py" />
+    <Compile Include="PopItSite\apps.py" />
+    <Compile Include="PopItSite\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PopItSite\migrations\__init__.py" />
+    <Compile Include="PopItSite\models.py" />
+    <Compile Include="PopItSite\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PopItSite\tests.py" />
+    <Compile Include="PopItSite\views.py" />
+    <Compile Include="PopItSite\__init__.py" />
+    <Compile Include="ZPop\admin.py" />
+    <Compile Include="ZPop\apps.py" />
+    <Compile Include="ZPop\migrations\__init__.py" />
+    <Compile Include="ZPop\models.py" />
+    <Compile Include="ZPop\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ZPop\tests.py" />
+    <Compile Include="ZPop\views.py" />
+    <Compile Include="ZPop\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DjangoWebProject1\static\.gitignore" />
+    <Content Include="DjangoWebProject1\static\.travis.yml" />
+    <Content Include="DjangoWebProject1\static\css\small-business.css" />
+    <Content Include="DjangoWebProject1\static\gulpfile.js" />
+    <Content Include="DjangoWebProject1\static\images\logo.png" />
+    <Content Include="DjangoWebProject1\static\images\logo_small.png" />
+    <Content Include="DjangoWebProject1\static\LICENSE" />
+    <Content Include="DjangoWebProject1\static\package.json" />
+    <Content Include="DjangoWebProject1\static\README.md" />
+    <Content Include="DjangoWebProject1\static\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="DjangoWebProject1\static\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="DjangoWebProject1\static\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="DjangoWebProject1\static\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="DjangoWebProject1\static\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="DjangoWebProject1\static\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="DjangoWebProject1\static\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="DjangoWebProject1\static\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="DjangoWebProject1\static\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="DjangoWebProject1\static\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="DjangoWebProject1\static\vendor\jquery\jquery.js" />
+    <Content Include="DjangoWebProject1\static\vendor\jquery\jquery.min.js" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\octicons.css" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\alert.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\arrow-down.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\arrow-left.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\arrow-right.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\arrow-small-down.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\arrow-small-left.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\arrow-small-right.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\arrow-small-up.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\arrow-up.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\beaker.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\bell.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\bold.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\book.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\bookmark.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\briefcase.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\broadcast.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\browser.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\bug.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\calendar.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\check.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\checklist.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\chevron-down.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\chevron-left.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\chevron-right.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\chevron-up.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\circle-slash.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\circuit-board.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\clippy.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\clock.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\cloud-download.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\cloud-upload.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\code.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\comment-discussion.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\comment.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\credit-card.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\dash.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\dashboard.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\database.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\desktop-download.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\device-camera-video.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\device-camera.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\device-desktop.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\device-mobile.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\diff-added.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\diff-ignored.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\diff-modified.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\diff-removed.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\diff-renamed.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\diff.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\ellipsis.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\eye.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\file-binary.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\file-code.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\file-directory.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\file-media.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\file-pdf.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\file-submodule.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\file-symlink-directory.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\file-symlink-file.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\file-text.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\file-zip.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\file.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\flame.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\fold.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\gear.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\gift.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\gist-secret.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\gist.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\git-branch.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\git-commit.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\git-compare.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\git-merge.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\git-pull-request.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\globe.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\grabber.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\graph.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\heart.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\history.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\home.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\horizontal-rule.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\hubot.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\inbox.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\info.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\issue-closed.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\issue-opened.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\issue-reopened.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\italic.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\jersey.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\kebab-horizontal.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\kebab-vertical.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\key.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\keyboard.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\law.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\light-bulb.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\link-external.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\link.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\list-ordered.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\list-unordered.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\location.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\lock.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\logo-gist.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\logo-github.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\mail-read.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\mail-reply.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\mail.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\mark-github.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\markdown.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\megaphone.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\mention.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\milestone.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\mirror.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\mortar-board.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\mute.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\no-newline.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\note.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\octoface.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\organization.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\package.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\paintcan.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\pencil.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\person.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\pin.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\plug.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\plus-small.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\plus.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\primitive-dot.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\primitive-square.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\project.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\pulse.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\question.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\quote.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\radio-tower.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\reply.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\repo-clone.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\repo-force-push.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\repo-forked.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\repo-pull.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\repo-push.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\repo.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\rocket.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\rss.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\ruby.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\screen-full.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\screen-normal.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\search.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\server.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\settings.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\shield.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\sign-in.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\sign-out.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\smiley.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\squirrel.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\star.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\stop.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\sync.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\tag.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\tasklist.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\telescope.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\terminal.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\text-size.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\three-bars.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\thumbsdown.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\thumbsup.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\tools.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\trashcan.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\triangle-down.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\triangle-left.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\triangle-right.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\triangle-up.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\unfold.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\unmute.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\unverified.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\verified.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\versions.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\watch.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\x.svg" />
+    <Content Include="DjangoWebProject1\static\vendor\octicons\svg\zap.svg" />
+    <Content Include="DjangoWebProject1\templates\index.html" />
+    <Content Include="DjangoWebProject1\templates\base.html" />
+    <Content Include="PopItSite\static\.gitignore" />
+    <Content Include="PopItSite\static\.travis.yml" />
+    <Content Include="PopItSite\static\css\small-business.css" />
+    <Content Include="PopItSite\static\gulpfile.js" />
+    <Content Include="PopItSite\static\images\logo.png" />
+    <Content Include="PopItSite\static\images\logo_small.png" />
+    <Content Include="PopItSite\static\LICENSE" />
+    <Content Include="PopItSite\static\package.json" />
+    <Content Include="PopItSite\static\README.md" />
+    <Content Include="PopItSite\static\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="PopItSite\static\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="PopItSite\static\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="PopItSite\static\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="PopItSite\static\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="PopItSite\static\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="PopItSite\static\vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="PopItSite\static\vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="PopItSite\static\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="PopItSite\static\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="PopItSite\static\vendor\jquery\jquery.js" />
+    <Content Include="PopItSite\static\vendor\jquery\jquery.min.js" />
+    <Content Include="PopItSite\static\vendor\octicons\octicons.css" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\alert.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\arrow-down.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\arrow-left.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\arrow-right.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\arrow-small-down.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\arrow-small-left.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\arrow-small-right.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\arrow-small-up.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\arrow-up.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\beaker.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\bell.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\bold.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\book.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\bookmark.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\briefcase.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\broadcast.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\browser.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\bug.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\calendar.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\check.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\checklist.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\chevron-down.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\chevron-left.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\chevron-right.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\chevron-up.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\circle-slash.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\circuit-board.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\clippy.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\clock.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\cloud-download.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\cloud-upload.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\code.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\comment-discussion.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\comment.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\credit-card.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\dash.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\dashboard.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\database.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\desktop-download.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\device-camera-video.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\device-camera.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\device-desktop.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\device-mobile.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\diff-added.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\diff-ignored.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\diff-modified.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\diff-removed.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\diff-renamed.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\diff.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\ellipsis.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\eye.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\file-binary.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\file-code.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\file-directory.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\file-media.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\file-pdf.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\file-submodule.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\file-symlink-directory.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\file-symlink-file.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\file-text.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\file-zip.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\file.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\flame.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\fold.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\gear.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\gift.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\gist-secret.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\gist.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\git-branch.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\git-commit.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\git-compare.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\git-merge.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\git-pull-request.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\globe.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\grabber.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\graph.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\heart.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\history.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\home.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\horizontal-rule.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\hubot.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\inbox.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\info.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\issue-closed.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\issue-opened.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\issue-reopened.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\italic.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\jersey.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\kebab-horizontal.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\kebab-vertical.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\key.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\keyboard.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\law.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\light-bulb.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\link-external.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\link.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\list-ordered.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\list-unordered.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\location.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\lock.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\logo-gist.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\logo-github.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\mail-read.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\mail-reply.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\mail.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\mark-github.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\markdown.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\megaphone.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\mention.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\milestone.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\mirror.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\mortar-board.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\mute.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\no-newline.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\note.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\octoface.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\organization.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\package.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\paintcan.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\pencil.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\person.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\pin.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\plug.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\plus-small.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\plus.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\primitive-dot.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\primitive-square.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\project.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\pulse.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\question.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\quote.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\radio-tower.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\reply.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\repo-clone.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\repo-force-push.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\repo-forked.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\repo-pull.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\repo-push.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\repo.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\rocket.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\rss.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\ruby.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\screen-full.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\screen-normal.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\search.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\server.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\settings.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\shield.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\sign-in.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\sign-out.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\smiley.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\squirrel.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\star.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\stop.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\sync.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\tag.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\tasklist.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\telescope.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\terminal.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\text-size.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\three-bars.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\thumbsdown.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\thumbsup.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\tools.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\trashcan.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\triangle-down.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\triangle-left.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\triangle-right.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\triangle-up.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\unfold.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\unmute.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\unverified.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\verified.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\versions.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\watch.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\x.svg" />
+    <Content Include="PopItSite\static\vendor\octicons\svg\zap.svg" />
+    <Content Include="PopItSite\templates\index.html" />
+    <Content Include="PopItSite\templates\base.html" />
+    <Content Include="PopItSite\templates\registration\login.html" />
+    <Content Include="PopItSite\templates\signup.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="ZPop\templates\main.html" />
+    <Content Include="ZPop\templates\zloginNew.html" />
+    <Content Include="ZPop\templates\zlogin.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DjangoWebProject1\" />
+    <Folder Include="DjangoWebProject1\static\" />
+    <Folder Include="DjangoWebProject1\static\css\" />
+    <Folder Include="DjangoWebProject1\static\images\" />
+    <Folder Include="DjangoWebProject1\static\vendor\" />
+    <Folder Include="DjangoWebProject1\static\vendor\bootstrap\" />
+    <Folder Include="DjangoWebProject1\static\vendor\bootstrap\css\" />
+    <Folder Include="DjangoWebProject1\static\vendor\bootstrap\js\" />
+    <Folder Include="DjangoWebProject1\static\vendor\jquery\" />
+    <Folder Include="DjangoWebProject1\static\vendor\octicons\" />
+    <Folder Include="DjangoWebProject1\static\vendor\octicons\svg\" />
+    <Folder Include="DjangoWebProject1\templates\" />
+    <Folder Include="PopItSite\" />
+    <Folder Include="PopItSite\migrations\" />
+    <Folder Include="PopItSite\static\" />
+    <Folder Include="PopItSite\static\css\" />
+    <Folder Include="PopItSite\static\images\" />
+    <Folder Include="PopItSite\static\vendor\" />
+    <Folder Include="PopItSite\static\vendor\bootstrap\" />
+    <Folder Include="PopItSite\static\vendor\bootstrap\css\" />
+    <Folder Include="PopItSite\static\vendor\bootstrap\js\" />
+    <Folder Include="PopItSite\static\vendor\jquery\" />
+    <Folder Include="PopItSite\static\vendor\octicons\" />
+    <Folder Include="PopItSite\static\vendor\octicons\svg\" />
+    <Folder Include="PopItSite\templates\" />
+    <Folder Include="PopItSite\templates\registration\" />
+    <Folder Include="ZPop\" />
+    <Folder Include="ZPop\migrations\" />
+    <Folder Include="ZPop\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="DjangoPopItenv\">
+      <Id>{d2aa69b9-1e14-4b6d-bb76-86e679fc656a}</Id>
+      <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
+      <Version>3.5</Version>
+      <Description>DjangoPopItenv (Python 3.5)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

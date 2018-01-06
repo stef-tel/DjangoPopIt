@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="generator" content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>That&#39;s my business</title>
+  <!-- Bootstrap core CSS -->
+  <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- MaxCDN bootstrap CSS v4.0 beta 3 -->
+  <!-- Custom styles for this template -->
+  <link href="../static/css/small-business.css" rel="stylesheet" />
+  <!-- CSS icons by octicons -->
+  <link rel="stylesheet" href="../../PopItSitestatic/vendor/octicons/octicons.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-menu-stef fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../site/index.html">Pop-it-in !</a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#">Projects</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="stef" href="#">Manage your invoices</a>
+              </li>
+              <li>
+                <a class="stef" href="#">Access your ZTools</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Content -->
+  <div class="container">
+    <!-- Heading Row -->
+    <div class="row my-4">
+      <div class="col-sm-2">
+        <div class="card" h-100="">
+          <div class="card-body">
+            <div class="navbar-header">
+              <span>ZTools utilities</span>
+            </div>
+            <ul class="nav flex-column">
+              <li class="nav-item active">
+                <a class="active" href="#">
+                <img src="vendor/octicons/svg/sign-in.svg" /> Log into your Zuora tenant</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">
+                <img src="vendor/octicons/svg/settings.svg" /> Tenant utilities</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">
+                <img src="vendor/octicons/svg/repo-push.svg" /> Manage your master data</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">
+                <img src="vendor/octicons/svg/repo-pull.svg" /> Manage your templates</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-10">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card h-70">
+              <div class="card-body">
+                <h2 class="card-title">Declare a new Zuora Tenant</h2>
+                <p class="card-text">click here to add a new item</p>
+
+
+                
+                {% block extra_js%}
+                <script src="http://malsup.github.com/jquery.form.js"></script>
+                {% endblock %}
+                <a class="btn btn-primary btn-sm btn-block btn-stef" data-toggle="modal" href=""{% url 'zloginNew' %}">Add New</a>
+                
+                <div class="modal hide" id="newZlogin">               
+                    <script>
+                        $('#modal').on('show.bs.modal', function (event) {
+                            var modal = $(this)
+                            $.ajax({
+                                url: "{% url 'zloginNew' %}",
+                                context: document.body
+                            }).done(function(response) {
+                                modal.html(response);
+                            });
+                        })
+                    </script>
+                </div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+          <!-- /.col-md-4 -->
+          {% for zlogin in zloginList %}
+          <div class="col-sm-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h2 class="card-title">{{ zlogin.name }}</h2>
+                <p class="card-text">{{ zlogin.userName }} for {{ zlogin.sid }}</p>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-primary btn-sm btn-stef">Connect</a>
+                  <a href="#" class="btn btn-primary btn-sm btn-stef">Test</a>
+                  <a href="#" class="btn btn-primary btn-sm btn-stef">Modify</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.col-md-4 -->
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright � Your Website 2017</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </div>
+</body>
+
+</html>
