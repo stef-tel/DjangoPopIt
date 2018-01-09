@@ -126,7 +126,11 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
-# registration settings
+# login and registration settings
 ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window; you may, of course, use a different value.
 
-TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'mainIndex'
+LOGOUT_REDIRECT_URL = 'mainIndex'
+
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'DjangoWebProject1','templates')]

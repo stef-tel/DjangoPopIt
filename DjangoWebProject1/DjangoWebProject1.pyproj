@@ -261,7 +261,8 @@
     <Content Include="DjangoWebProject1\static\vendor\octicons\svg\watch.svg" />
     <Content Include="DjangoWebProject1\static\vendor\octicons\svg\x.svg" />
     <Content Include="DjangoWebProject1\static\vendor\octicons\svg\zap.svg" />
-    <Content Include="DjangoWebProject1\templates\base.html" />
+    <Content Include="PopItSite\templates\contact.html" />
+    <Content Include="PopItSite\templates\base.html" />
     <Content Include="PopItSite\static\.gitignore" />
     <Content Include="PopItSite\static\.travis.yml" />
     <Content Include="PopItSite\static\css\small-business.css" />
@@ -462,6 +463,7 @@
     <Content Include="PopItSite\static\vendor\octicons\svg\x.svg" />
     <Content Include="PopItSite\static\vendor\octicons\svg\zap.svg" />
     <Content Include="PopItSite\templates\index.html" />
+    <Content Include="ZPop\templates\zpop_base.html" />
     <Content Include="PopItSite\templates\popsite_base.html" />
     <Content Include="PopItSite\templates\registration\login.html" />
     <Content Include="PopItSite\templates\signup.html" />

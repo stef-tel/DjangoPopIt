@@ -1,20 +1,11 @@
-﻿<!DOCTYPE html>
+﻿{% extends 'base.html' %}
 
-<html>
+{% block content %}
 
-<head>
+  <div class="row my-4">
+      <div class="col-lg-12">
 
-  <meta charset="utf-8">
-
-  <title>{% block title %}Django Simple Login{% endblock %}</title>
-
-</head>
-
-<body>
-
-  <header>
-
-    <h1>Django Simple Login</h1>
+    <h1>Django Simple Login for popit</h1>
 
     {% if user.is_authenticated %}
 
@@ -28,26 +19,18 @@
 
     {% endif %}
 
-  </header>
-
   <hr>
 
-  <main>
 
-    {% block content %}
 
-    {% endblock %}
+    {% block login %}
 
-  </main>
+    {% endblock login%}
+
+
 
   <hr>
+</div>
+</div>
 
-  <footer>
-
-    <a href="http://simpleisbetterthancomplex.com">simpleisbetterthancomplex.com</a>
-
-  </footer>
-
-</body>
-
-</html>
+{% endblock content%}

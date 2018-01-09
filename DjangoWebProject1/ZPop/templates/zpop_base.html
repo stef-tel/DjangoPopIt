@@ -1,0 +1,55 @@
+﻿{% extends 'base.html' %}
+
+{% block content %}
+
+        <!-- Heading Row -->
+        <div class="row my-4">
+            <div class="col-sm-2">
+
+                <div class="card" h-100 ">
+                    <div class="card-body ">
+                        <div class="navbar-header ">
+                          <span>ZTools utilities</span>
+                        </div>
+                        <ul class="nav flex-column ">
+                          <li class="nav-item active "><a class="active " href="zlogin ">
+                            <span class="octicon octicon-sign-in "></span>
+                            <img src="vendor/octicons/svg/sign-in.svg "></img>
+                            Log into your Zuora tenant
+                          </a></li>
+                          <li class="nav-item "><a href="# ">
+                            <span class="octicon octicon-settings "></span>
+                            <img src="vendor/octicons/svg/settings.svg "></img>
+                            Tenant utilities
+                          </a></li>
+                          <li class="nav-item "><a href="# ">
+                            <span class="octicon octicon-repo-push "></span>
+                            <img src="vendor/octicons/svg/repo-push.svg "></img>
+                            Manage your master data
+                          </a></li>
+                          <li class="nav-item "><a href="# ">
+                            <span class="octicon octicon-repo-pull "></span>
+                            <img src="vendor/octicons/svg/repo-pull.svg "></img>
+                            Manage your templates
+                          </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+      </div>
+    <!-- /.col-lg-2 -->
+    
+        <div class="col-sm-10 ">
+        {% block rightFrame %}
+            <h1>ZPOP tools are made to help you define your strategies</h1>
+            <p>Replicate your master data into a relational db and apply your strategies</p>
+            <p>Define master data templates and create / control your master data </p>
+            <p>Get insight thoughts</p>
+        {% endblock rightFrame %}  
+      </div>
+      <!-- /.col-lg-2 -->
+    </div>
+    <!-- /.row -->
+      
+
+{% endblock content %}

@@ -1,12 +1,12 @@
 ﻿{% extends 'popsite_base.html' %}
 
-{% block title %}Login{% endblock %}
+{% block title %}Login{% endblock title%}
 
-{% block content %}
-  <h2>Login</h2>
+{% block login %}
+  <h2>Log into Pop It</h2>
   <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Login</button>
   </form>
-{% endblock %}
+{% endblock login%}

@@ -20,9 +20,9 @@ urlpatterns = [
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
-    url(r'^index', views.index),
-
+    url(r'^index', views.index, name='mainIndex'),
     url(r'^registration/login/$', auth_views.login, name='login'),
     url(r'^logout/$', auth_views.logout, name='logout'),
     url(r'^signup/$', views.signup, name='signup'),
+    url(r'^contact/$', views.contact, name='contact'),
 ]

@@ -3,6 +3,7 @@ from django.http import Http404
 from django.shortcuts import render, get_list_or_404, redirect 
 from datetime import datetime
 from ZPop.models import Zlogin
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def main(request):    
@@ -13,6 +14,7 @@ def main(request):
 
 
 
+@login_required
 def zlogin(request):    
 
     # Return list of existing zlogin or 404 if none found
@@ -21,6 +23,7 @@ def zlogin(request):
 
 
 
+@login_required
 def zloginNew(request):    
 
     return render(request, 'zloginNew.html', locals())

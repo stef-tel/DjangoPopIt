@@ -10,6 +10,11 @@ def index(request):
     # Retourne nombre1, nombre2 et la somme des deux au tpl
     return render(request, 'index.html', locals())
 
+def contact(request):    
+
+    # Retourne nombre1, nombre2 et la somme des deux au tpl
+    return render(request, 'contact.html', locals())
+
 
 def signup(request):
     if request.method == 'POST':
