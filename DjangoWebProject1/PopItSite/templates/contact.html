@@ -14,7 +14,8 @@
   <div class="col-md-4 mb-4">
 
     <form role="form" action="" method="post">
-
+      {% csrf_token %}      
+    
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">

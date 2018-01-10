@@ -133,4 +133,14 @@ LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'mainIndex'
 LOGOUT_REDIRECT_URL = 'mainIndex'
 
+#Paths
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'DjangoWebProject1','templates')]
+
+#mail settings
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'stef.tellier'
+EMAIL_HOST_PASSWORD = '1ninitito2+'
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' 
+DEFAULT_FROM_EMAIL = 'stef.tellier@gmail.com'
+EMAIL_USE_TLS = True 
+EMAIL_PORT = 587
